@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title> Portfólio | Igor Almeida - Desenvolvedor Front-End</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#habilidades" class="menu-link">Habilidades</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="img/igoralmeida.jpeg" alt="Foto de Igor Almeida" class="foto-perfil">
+        <h1>Igor Almeida</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front-End</p>
+    </main>
+
+    <div class="btn-sci">
+        <a href="" class="btn">Download CV</a>
+        <a href="#contatos" class="btn">Entre em contato</a>
+    </div>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou desenvolvedor Front-end com experiência em <strong>HTML, CSS e JavaScript</strong>. Gosto de
+                explorar novas
+                tecnologias e aplicá-las em projetos reais, sempre buscando melhorar a performance, usabilidade e
+                segurança das aplicações.
+                Sou movido por desafios e estou em constante evolução, estudando novas linguagens, frameworks e boas
+                práticas do mercado. Meu objetivo é entregar soluções modernas, eficientes e alinhadas com as
+                necessidades da empresa.
+            </p>
+        </div>
+
+        <section id="habilidades" class="sobre">
+            <h2 class="habilidades-titulo">Habilidades</h2>
+            <div class="habilidades-grid">
+                <div class="habilidades-item">
+                    <div class="habilidades-icon">&#128187;</div>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <section id="projetos" class="sobre">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="img/projeto1.png" alt="projetos-imagem" class="projetos-imagem">
+                <div class="caixas-textos-projetos">
+                    <h3 class="info-projetos">NIKE Landing Page</h3>
+                    <p class="paragrafo-projetos">
+                        Desenvolvimento de uma página de vendas interativa para um tênis da Nike, permitindo ao usuário
+                        visualizar e selecionar entre as cores disponíveis: verde, azul e rosa
+                    </p>
+                    <div class="projetos-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="projetos-link">
+                        <a href="https://landing-page-tenis-nike.vercel.app" target="_blank" rel="external"> <span>Link do Projeto</span></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto2.png" alt="projetos-imagem" class="projetos-imagem">
+                <div class="caixas-textos-projetos">
+                    <h3 class="info-projetos">iPhone Landing Page</h3>
+                    <p class="paragrafo-projetos"> Página de vendas interativa do iPhone 13, com diversas cores
+                        disponíveis do aparelho</p>
+                    <div class="projetos-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="projetos-link">
+                        <a href="https://landingpageiphone.vercel.app" target="_blank" rel="external"><span>Link do Projeto</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contatos" class="sobre">
+        <h2 class="contatos-titulo">Entre em Contato!</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea placeholder="Digite sua Mensagem" rows="6" id="mensagem" class="campo-form"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+
+    </section>
+
+    <div class="btn-sci">
+        <div class="sci">
+            <a href="https://github.com/o-igoralmeida"><input type="button" class="botao-sci"><i
+                    class='bx bxl-github'></i></a>
+
+            <a href="https://www.linkedin.com/in/igoralmeidaa/"><input type="button" class="botao-sci"><i
+                    class='bx bxl-linkedin'></i></a>
+
+            <a href="mailto:igoralmeidaa457@gmail.com"> <input type="button" class="botao-sci"><i
+                    class='bx bx-envelope'></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="icones-footer">
+            <li>&#128187;</li>
+            <li>&#128101;</li>
+            <li>&#128038;</li>
+        </ul>
+
+        <p>&copy; 2025 Igor Almeida. Todos os direitos reservados</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
